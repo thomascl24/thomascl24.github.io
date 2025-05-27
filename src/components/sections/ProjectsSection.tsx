@@ -12,8 +12,8 @@ export default function ProjectsSection({ onProjectClick }: ProjectsSectionProps
     <section id="projects" className="py-16 bg-background min-h-screen">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6">My Projects</h1>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+          <h1 className="text-5xl md:text-6xl font-bold text-slate-900 dark:text-slate-100 mb-6">My Projects</h1>
+          <p className="text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">
             Explore my data science projects and see how I solve real-world problems
           </p>
         </div>
@@ -60,7 +60,7 @@ function ProjectCard({ project, isReversed, onClick }: ProjectCardProps) {
               <p className="text-slate-600 mb-4">{project.description}</p>
               <div className="flex flex-wrap gap-2">
                 {project.technologies.slice(0, 3).map((tech) => (
-                  <Badge key={tech} variant="outline" className="text-sm">
+                  <Badge key={tech} variant="outline" className="text-sm text-slate-700 dark:text-slate-300">
                     {tech}
                   </Badge>
                 ))}

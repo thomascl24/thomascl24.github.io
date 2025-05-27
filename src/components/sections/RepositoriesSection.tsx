@@ -5,7 +5,7 @@ import { repositories } from "@/lib/constants";
 
 export default function RepositoriesSection() {
   return (
-    <section id="repositories" className="py-16 bg-slate-50 min-h-screen">
+    <section id="repositories" className="py-16 bg-background min-h-screen">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6">Repositories</h1>
