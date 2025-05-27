@@ -42,7 +42,7 @@ export default function Navigation() {
                 </Link>
               ))}
             </div>
-            <ThemeToggle />
+              {/*<ThemeToggle /> turn off the theme toggle*/} 
           </div>
         </div>
       </div>
