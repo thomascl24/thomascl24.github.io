@@ -51,7 +51,7 @@ jobs:
               outDir: "dist",
               emptyOutDir: true,
             },
-            base: "./",
+            base: "/",
           });
           EOF
           
