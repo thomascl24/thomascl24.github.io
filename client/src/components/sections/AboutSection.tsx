@@ -21,7 +21,7 @@ export default function AboutSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
             <img 
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400" 
+              src="/thomasleepfp.jpg" 
               alt="Thomas Lee Profile Picture" 
               className="w-64 h-64 rounded-full mx-auto lg:mx-0 mb-6 shadow-xl object-cover"
             />
