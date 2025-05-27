@@ -16,7 +16,7 @@ export default function RepositoriesSection() {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {repositories.map((repo) => (
-            <Card key={repo.name} className="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <Card key={repo.name} className="bg-background shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardHeader>
                 <div className="flex items-center justify-between mb-4">
                   <CardTitle className="text-xl font-bold text-slate-900">{repo.name}</CardTitle>
