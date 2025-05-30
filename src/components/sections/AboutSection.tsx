@@ -5,7 +5,7 @@ export default function AboutSection() {
 
   return (
     <section id="about" className="pt-24 pb-16 min-h-screen bg-background">
-      <div className="max-w-6xl mx-auto px-6 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-10 sm:px-10 lg:px-10">
         <div
           ref={ref}
           className={`text-center mb-6 fade-in-section ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
@@ -28,7 +28,6 @@ export default function AboutSection() {
               alt="Thomas Lee Profile Picture"
               className="w-64 h-64 rounded-full mx-auto lg:mx-0 mb-6 shadow-xl object-cover"
             />
-            <p className="mx-auto text-slate-600 dark:text-slate-400 font-medium">📞 510-230-7619</p>
           </div>
         </div>
         <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
