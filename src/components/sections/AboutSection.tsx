@@ -5,7 +5,7 @@ export default function AboutSection() {
 
   return (
     <section id="about" className="pt-24 pb-16 min-h-screen bg-background">
-      <div className="max-w-6xl mx-auto px-10 sm:px-10 lg:px-10">
+      <div className="max-w-6xl mx-auto px-16 sm:px-16 lg:px-16">
         <div
           ref={ref}
           className={`text-center mb-6 fade-in-section ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
