@@ -5,7 +5,7 @@ export default function AboutSection() {
 
   return (
     <section id="about" className="pt-24 pb-16 min-h-screen bg-background">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-6 sm:px-6 lg:px-8">
         <div
           ref={ref}
           className={`text-center mb-6 fade-in-section ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
@@ -14,7 +14,7 @@ export default function AboutSection() {
           <h1 className="text-5xl md:text-6xl font-bold text-slate-900 dark:text-slate-100 mb-6">About Thomas</h1>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-10 items-center mb-6">
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-6">
           <div className="space-y-6">
             <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
               Hello, and welcome to my portfolio! I'm Thomas Lee, an aspiring data scientist with expertise in machine learning,
@@ -22,13 +22,13 @@ export default function AboutSection() {
               hidden within data, and building models to deepen our understanding of real-world phenomena.
             </p>
           </div>
-          <div className="text-center lg:text-left">
+          <div className="text-center">
             <img
               src="thomasleepfp.jpg"
               alt="Thomas Lee Profile Picture"
               className="w-64 h-64 rounded-full mx-auto lg:mx-0 mb-6 shadow-xl object-cover"
             />
-            <p className="text-center text-slate-600 dark:text-slate-400 font-medium">📞 510-230-7619</p>
+            <p className="mx-auto text-slate-600 dark:text-slate-400 font-medium">📞 510-230-7619</p>
           </div>
         </div>
         <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
@@ -41,8 +41,7 @@ export default function AboutSection() {
           and "how can we leverage our decades of historical pipeline condition data to improve pipeline failure forcasting?"
           I have found that the most interesting questions require both and technical skills and creativity to draw meaningful insights that motivate decision making.
         </p>
-        <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
-        </p>
+        
         <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
           With my strong foundation in Python, SQL, and other data science frameworks, I am passionate about building
           predictive models, conducting statistical analyses, and creating compelling data visualizations that
