@@ -4,47 +4,50 @@ export default function AboutSection() {
   const [ref, isVisible] = useIntersectionObserver();
 
   return (
-    <section id="about" className="pt-24 pb-16 min-h-screen bg-background">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div 
-          ref={ref}
-          className={`text-center mb-16 fade-in-section ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }`}
-        >
-          <h1 className="text-5xl md:text-6xl font-bold text-slate-900 dark:text-slate-100 mb-6">About Thomas</h1>
-          <p className="text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">
-            Data Scientist passionate about turning complex data into actionable insights
-          </p>
-        </div>
+    <section id="about" className="pt-20 pb-16 min-h-screen bg-background">
+      <div className="max-w-6xl mx-auto px-16 sm:px-16 lg:px-16">
         
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="text-center lg:text-left">
-            <img 
-              src="/thomasleepfp.jpg" 
-              alt="Thomas Lee Profile Picture" 
-              className="w-64 h-64 rounded-full mx-auto lg:mx-0 mb-6 shadow-xl object-cover"
-            />
-            <p className="text-lg text-slate-600 dark:text-slate-400 font-medium">📞 510-230-7619</p>
-          </div>
-          
+          <h1 className="text-2xl md:text-6xl text-slate-900 dark:text-slate-100 mb-6">About Thomas</h1>
+          <p className="text-xl text-slate-600 dark:text-slate-400 mx-auto">
+            Aspiring data scientist passionate about turning complex data into actionable insights
+          </p>
+        
+        <div className="grid lg:grid-cols-2 gap-20 items-center mb-6">
           <div className="space-y-6">
-            <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
-              Welcome to my portfolio! I'm Thomas Lee, a passionate data scientist with expertise in machine learning, 
-              statistical analysis, and data visualization. I love solving complex problems and discovering insights 
-              hidden within data.
+            <p className="text-base text-slate-700 dark:text-slate-300 leading-relaxed">
+              Hello, and welcome to my portfolio! I'm Thomas Lee, an aspiring data scientist with expertise in machine learning,
+              statistical analysis, and data visualization. I love solving complex problems, discovering the insights
+              hidden within data, and building models to deepen our understanding of real-world phenomenons.
             </p>
-            <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
-              With a strong foundation in Python, R, and various data science frameworks, I specialize in building 
-              predictive models, conducting statistical analyses, and creating compelling data visualizations that 
-              drive business decisions.
-            </p>
-            <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
-              Currently seeking opportunities to apply my skills in a dynamic data science role where I can contribute 
-              to meaningful projects and continue growing as a professional.
-            </p>
+            <br />
+            <p className="text-base text-slate-700 dark:text-slate-300 leading-relaxed">I graduated from U.C. Berkeley in 2024 with a degree in Computer Science and a minor in Data Science.
+          During my time in university, I gained a great deal of experience working as a machine learning intern
+          in the biotechnology industry and working as a researcher in several U.C. Berkeley labs. </p>
+          </div>
+          <div className="text-center">
+            <img
+              src="thomasleepfp.jpg"
+              alt="Thomas Lee Profile Picture"
+              className="w-45 h-45 lg:mx-0 mt-10 shadow-xl object-cover rounded"
+            />
           </div>
         </div>
+        <p className="text-base text-slate-700 dark:text-slate-300 leading-relaxed">
+          Since then,
+          I have been working as a data science intern at the East Bay Municipal Utility District (<a href='https://www.ebmud.com/'>EBMUD</a>), the largest
+          provider of clean drinking water in the East Bay, where I tackle critical questions like
+          "how will a $200 million investment into smart water infrastructure manifest itself as water savings from our customers?"
+          and "how can we leverage our decades of historical pipeline condition data to improve pipeline failure forcasting?"
+          I have found that the most interesting questions require both and technical skills and creativity to draw meaningful insights that motivate decision making.
+        </p>
+        <br />
+        <p className="text-base text-slate-700 dark:text-slate-300 leading-relaxed">
+          With my strong foundation in Python, SQL, and other data science frameworks, I am passionate about building
+          predictive models, conducting statistical analyses, and creating compelling data visualizations that
+          drive business decisions. I am currently seeking opportunities to apply my skills in a dynamic data science role where I can contribute
+          to meaningful projects and continue growing my skills as a data scientist.
+        </p>
+
       </div>
     </section>
   );

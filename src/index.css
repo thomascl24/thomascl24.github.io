@@ -55,6 +55,8 @@
   body {
     @apply antialiased bg-background text-foreground;
     font-family: 'Inter', system-ui, sans-serif;
+    padding-left: 7rem;   
+    padding-right: 7rem;  
   }
 
   html {

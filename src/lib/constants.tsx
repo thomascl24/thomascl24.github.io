@@ -2,118 +2,143 @@ export interface Project {
   id: string;
   title: string;
   description: string;
+  repolink: string;
+  repodesc: string;
   image: string;
   technologies: string[];
   overview: string;
   implementation: string[];
   results: string[];
+  pdffile: string;
+  pdfwidth:string;
+  pdfheight:string;
 }
 
 export const projects: Project[] = [
   {
-    id: "machine-learning-prediction",
-    title: "Machine Learning Prediction Model",
-    description: "Advanced predictive modeling using ensemble methods to forecast customer behavior with 95% accuracy.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
-    technologies: ["Python", "Scikit-learn", "Pandas", "XGBoost", "Flask"],
-    overview: "This project involved developing a comprehensive machine learning pipeline to predict customer behavior patterns using advanced ensemble methods. The model achieved 95% accuracy on the test dataset.",
+    id: "pokemon-tcg-power-level",
+    title: "RoBERTa and BERT Pokémon Trading Card Game Card Power and Synergy Prediction",
+    description: "Applying large language models to predict Pokémon card strength and synergy with other cards prior to observed gameplay.",
+    repolink: "https://github.com/thomascl24/roberta-bert-pokemon-tcg-nlp",
+    repodesc: "Link to repository: ",
+    image: "pokemon_tcg_logo.png",
+    technologies: ["Python", "Tensorflow", "PyTorch", "BERT", "RoBERTa", "numpy", "pandas", "scikit-learn", "scipy"],
+    overview: "The Pokémon Trading Card Game (TCG) is a dynamic and competitive collectible card game featuring thousands of unique cards, frequent expansions, and an evolving set of tournament-legal cards. In such a rapidly shifting environment, understanding card synergy and predicting usage trends have become vital for competitive success. This project applies modern NLP machine learning techniques to historical tournament data and card metadata to identify synergies between cards and forecast their future usage in competitive play. Our models aim to quantify relationships between cards, assess their potential utility in evolving metagames, and provide players with a data-driven edge. These findings have applications in competitive analytics, deck-building tools, and strategic planning. The main data sources for this project are a list of all Pokémon cards from 1999 to 2023 (over 17,000 cards) and a list of all competitive Pokémon deck lists used in tournaments from 2011 to 2023. We input the raw text from each of these cards (card type, description, abilities, etc.) into our models. We use the tournament data to validate our model results.",
     implementation: [
-      "Data preprocessing and feature engineering using pandas and numpy",
-      "Implementation of Random Forest, Gradient Boosting, and XGBoost models",
-      "Hyperparameter tuning using GridSearchCV and RandomizedSearchCV",
-      "Model validation using cross-validation and bootstrapping",
-      "Performance evaluation using precision, recall, F1-score, and AUC-ROC"
+      "Trained RoBERTa and BERT models with Huber loss for greater robustness against label noise and outlier values",
+      "Used grid search hyperparameter tuning to find optimal parameter values for models",
+      "Used Tensorflow, pandas, and numpy for data preprocessing and feature engineering to transform raw text data into card embeddings",
+      "Analyzed attention outputs of models to ensure meaningful card embedding representations",
+      "Model validation using cross-validation",
+      "Performance evaluation using precision and F1-score"
     ],
     results: [
-      "95% prediction accuracy on customer churn prediction",
-      "Identified top 5 features driving customer behavior",
-      "Reduced false positive rate by 40% compared to baseline models",
-      "Deployed model using Flask API for real-time predictions"
-    ]
+      "57% and 61% precision in identifying the top 100 most powerful Pokémon and trainer cards respectively",
+      "0.53 F1 in the top 100 most powerful cards",
+      "Lower mean absolute errors of 0.0044 and 0.0526 compared to baselines of 0.0056 and 0.0575",
+      "Identified several thousand potential new synergies not yet discovered by players",
+    ],
+    pdffile:'pkmpaper.pdf',
+    pdfwidth:"800px",
+    pdfheight:"2100px"
+
   },
   {
-    id: "data-visualization-dashboard",
-    title: "Interactive Data Visualization Dashboard",
-    description: "Real-time dashboard built with D3.js and React to visualize complex datasets for business intelligence.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
-    technologies: ["D3.js", "React", "PostgreSQL", "Node.js", "AWS"],
-    overview: "Built a comprehensive real-time dashboard for business intelligence using React and D3.js, providing stakeholders with interactive visualizations of key performance metrics.",
+    id: "sf-crime-dashboard",
+    title: "Exploring Crime Patterns and Trends in San Francisco",
+    description: "Interactive dashboards to visualize spacial and temporal trends of San Franscisco crime.",
+    repolink: "https://apps.ischool.berkeley.edu/~thomascl/w209/",
+    repodesc: "Link to webpage: ",
+    image: "GoldenGateBridge-001.jpg",
+    technologies: ["Tableau", "HTML", "CSS", "JavaScript", "TypeScript"],
+    overview: "Crime is a reality in every city, and the level of crime within a particular city can influence decisions like where individuals choose to live and how leaders decide to allocate resources. This is highly evident in a city like San Francisco, where the level of crime can range greatly from one neighborhood to the next. Our group has created an interactive dashboard of crime in San Francisco. The information presented in this dashboard serves as an effective tool for stakeholders interested in community revitalization in San Francisco.",
     implementation: [
-      "Real-time data updates from PostgreSQL database",
-      "Interactive charts including line plots, bar charts, and heat maps",
-      "Filtering and drill-down capabilities",
-      "Responsive design for desktop and mobile devices",
-      "Export functionality for reports and presentations"
+      "Utilized Tableau to create interactive dashboards",
+      "Time series plots to show crime trends by neighborhood and crime type",
+      "Geographic heat maps to show crime distributions across San Francisco"
     ],
     results: [
-      "Reduced report generation time by 80%",
-      "Improved decision-making speed for stakeholders",
-      "Increased user engagement with data by 150%",
-      "Successfully deployed on AWS with 99.9% uptime"
-    ]
+      "San Francisco crime is trending downwards overall, but some crime types are on the rise, such as assault, motor vehicle theft, and drug offenses",
+      "Crime in all neighborhoods except for the Tenderloin is trending downwards",
+      "Fewer crimes occur on the weekends compared to the weekdays",
+      "The South of Market neighborhood has the highest total number of incidents"
+    ],
+    pdffile:'',
+    pdfwidth:"0px",
+    pdfheight:"0px"
   },
   {
-    id: "nlp-sentiment-analysis",
-    title: "NLP Sentiment Analysis",
-    description: "Natural language processing model to analyze customer sentiment from social media data using BERT transformers.",
-    image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
-    technologies: ["Python", "NLTK", "Transformers", "BERT", "PyTorch"],
-    overview: "Developed a sophisticated natural language processing system to analyze customer sentiment from social media data using state-of-the-art BERT transformers.",
+    id: "mushroom",
+    title: "XGBoost for Poisonous Mushroom Classification",
+    description: "Classifying poisonous versus non-poisonous mushrooms using features on physical appearance.",
+    repolink:'https://github.com/thomascl24/poisonous-mushrooms-classification',
+    repodesc: "Link to repository: ",
+    image: "mushrooms.jpg",
+    technologies: ["Python", "XGBoost", "Tensorflow", "numpy", "pandas", "scikit-learn"],
+    overview: "As a layperson, it can be difficult to determine whether a wild mushroom is poisonous or not. Mushrooms often have very similar appearances but very different toxicity levels, which makes identification notoriously difficult and the consequences of false classification deadly.",
     implementation: [
-      "Web scraping of social media posts using APIs",
-      "Text preprocessing and cleaning with NLTK",
-      "Named entity recognition and topic modeling",
-      "Sentiment classification using fine-tuned BERT",
-      "Real-time sentiment monitoring dashboard"
+      "Exploratory data analysis revealed which features have the greatest class imbalances and which features have high correlations with other features",
+      "Conducted chi-squared tests for feature selection",
+      "Trained scikit-learn random forest model and XGBoost models with mushroom appearance features as input and toxicity levels as output",
+      "Used grid search cross validation to find optimal hyperparameter values for models",
+      "Visualized results in ROC curves and accuracy per epoch"
     ],
     results: [
-      "93% accuracy on sentiment classification",
-      "F1-score of 0.91 across all sentiment categories",
-      "Processed over 100,000 social media posts",
-      "Sub-second inference time for real-time analysis"
-    ]
+      "Achieved 100% recall on test set, indicating zero incorrectly classified poisonous mushrooms",
+      "Achieved 99.7% accuracy on test set"
+    ],
+    pdffile:'',
+    pdfwidth:"0px",
+    pdfheight:"0px"
   },
   {
-    id: "deep-learning-cnn",
-    title: "Deep Learning CNN for Image Classification",
-    description: "Convolutional neural network achieving 98% accuracy on medical image classification for early disease detection.",
-    image: "https://pixabay.com/get/g55a2b1b053ae0f09d48269f943c43ea71e047cddc05a8612526af8cdff7dc18d903754a71fa0894ca62a835c70237b5ead9337d36376291fc659010b2e1d7c9a_1280.jpg",
-    technologies: ["TensorFlow", "Keras", "OpenCV", "Python", "GPU Computing"],
-    overview: "Developed a convolutional neural network for medical image classification, achieving 98% accuracy in early disease detection from radiological images.",
+    id: "food",
+    title: "Sustainable Food Delivery Using Public Transportation",
+    description: "Creating a NoSQL Neo4j database to optimize routes for food delivery.",
+    repolink:'https://github.com/thomascl24/public-transportation-food-delivery',
+    repodesc: "Link to repository: ",
+    image: "bart.jpg",
+    technologies: ["Neo4j", "NoSQL", "PostgreSQL", "Python"],
+    overview: "Throughout the Fundamentals of Data Engineering course, we develop a delivery service for a hypothetical company called Acme Gourmet Meals (AGM). The product and purchase data for this company was stored in PostgreSQL relational tables. As the final project for this class, our group decided to create a NoSQL Neo4j database to find optimized routes for food delivery services that take advantage of the BART system. This would be an eco-friendly solution for customers that would still like their food delivered straight to their door.",
     implementation: [
-      "Custom CNN architecture with residual connections",
-      "Data augmentation techniques to prevent overfitting",
-      "Transfer learning from pre-trained ImageNet models",
-      "Attention mechanisms for interpretability",
-      "Ensemble of multiple models for robust predictions"
+      "Constructed a graph using Neo4j with customers, stores, and BART station nodes",
+      "Applied Dijkstra's algorithm to optimize for different objective functions, such as travel time or travel cost",
+      "Applied betweenness centrality to identify key transit stations that act as crucial intermediaties in the network",
+      "Applied harmonic centrality to identify most accessible transit stations for choosing new AGM locations",
+      "Different objectives can be optimized for easily by changing edge weights between stations and customers"
     ],
     results: [
-      "98% accuracy in disease classification",
-      "Reduced false negative rate by 60%",
-      "Potential for early intervention and treatment",
-      "Validated on dataset of 50,000+ medical images"
-    ]
+      "Able to efficiently find the distance from each customer to their closest BART station, through the BART network, then to the closest AGM location",
+      "Identified top three best locations for opening new AGM stores",
+    ],
+    pdffile:'',
+    pdfwidth:"0px",
+    pdfheight:"0px"
+
   },
   {
-    id: "time-series-forecasting",
-    title: "Time Series Forecasting",
-    description: "ARIMA and LSTM models for financial market prediction with automated trading strategy implementation.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
-    technologies: ["Python", "TensorFlow", "Statsmodels", "LSTM", "ARIMA"],
-    overview: "Built sophisticated time series forecasting models using ARIMA and LSTM networks for financial market prediction with automated trading strategy implementation.",
+    id: "voting",
+    title: "A Statistical Analysis of Voting Difficulty in Democrat and Republican Voters",
+    description: "Do Democrat voters or Republican voters experience more difficulty voting?",
+    repolink:'https://github.com/thomascl24/voting-difficulty',
+    repodesc: "Link to repository: ",
+    image: "dem_rep.jpg",
+    technologies: ["R", "ggplot2", "dplyr", "Hypothesis Testing"],
+    overview: "Voting difficulty is a critical issue in the study of electoral behavior and democratic participation. Having difficulty deciding who to vote for can impact voter turnout, election outcomes, and the overall health of a democracy. Our group wanted to determine whether Democrat or Republican voters find it more difficult to vote for their party's presidential candidate. We used the ANES 2022 survey data for this research. Survey participants answered several quuestions such as their political affiliation and who they plan on voting for in 2024.",
     implementation: [
-      "Statistical models: ARIMA, SARIMA, and VAR",
-      "Deep learning: LSTM and GRU networks",
-      "Feature engineering with technical indicators",
+      "Built a data pipeline in R to remove individuals not relevant to the study, such as non-registered voters and individuals with no political affiliation. Further removed samples with incomplete data on features of interest.",
+      "Assigned individuals to be in the Democrat or Republican party according to survey answers",
+      "Applied Welch's two-sample t-test and Wilcoxon rank sum test to compare voting difficulty between individuals assigned to be Democrat versus Republican",
       "Ensemble methods combining multiple approaches",
       "Risk management and portfolio optimization"
     ],
     results: [
-      "15% annual return with automated strategy",
-      "Sharpe ratio of 1.8 over backtesting period",
-      "Maximum drawdown limited to 8%",
-      "Consistent performance across different market conditions"
-    ]
+      "Hypothesis tests failed to reject the null using a 0.05 p-value threshold, indicating that there is not conclusive evidence of difficulty in voting between Republicans and Democrats using this survey data"
+    ],
+    pdffile:'203_Project_Rep_vs__Dem.pdf',
+    pdfwidth:"800px",
+    pdfheight:"2100px"
+
   }
 ];
 
@@ -124,44 +149,32 @@ export interface Repository {
     name: string;
     color: string;
   };
-  stars: number;
+  repolink: string;
 }
 
 export const repositories: Repository[] = [
   {
-    name: "data-analysis-toolkit",
-    description: "Comprehensive Python toolkit for exploratory data analysis with automated report generation.",
+    name: "thomascl24/roberta-bert-pokemon-tcg-nlp",
+    description: "Using LLMs to enable early card power level and synergy analysis",
     language: { name: "Python", color: "bg-yellow-400" },
-    stars: 42
+    repolink: 'https://github.com/thomascl24/roberta-bert-pokemon-tcg-nlp'
   },
   {
-    name: "ml-model-deployment",
-    description: "Flask and Docker setup for deploying machine learning models to production environments.",
+    name: "thomascl24/poisonous-mushrooms-classification",
+    description: "Using machine learning models to predict mushroom toxicity",
     language: { name: "Python", color: "bg-yellow-400" },
-    stars: 28
+    repolink: 'https://github.com/thomascl24/poisonous-mushrooms-classification'
   },
   {
-    name: "statistical-analysis",
-    description: "R scripts and Jupyter notebooks for advanced statistical analysis and hypothesis testing.",
-    language: { name: "R", color: "bg-blue-500" },
-    stars: 15
+    name: "thomascl24/public-transportation-food-delivery",
+    description: "NoSQL Neo4j database to compute optimized food delivery routes usingg public transportation",
+    language: { name: "Python", color: "bg-yellow-500" },
+    repolink: 'https://github.com/thomascl24/public-transportation-food-delivery'
   },
   {
-    name: "data-visualization-lib",
-    description: "Custom JavaScript library for creating interactive data visualizations with D3.js.",
-    language: { name: "JavaScript", color: "bg-yellow-300" },
-    stars: 33
-  },
-  {
-    name: "deep-learning-experiments",
-    description: "Collection of neural network experiments and research implementations using TensorFlow.",
-    language: { name: "Python", color: "bg-yellow-400" },
-    stars: 67
-  },
-  {
-    name: "web-scraping-tools",
-    description: "Efficient web scraping utilities with BeautifulSoup and Selenium for data collection.",
-    language: { name: "Python", color: "bg-yellow-400" },
-    stars: 19
+    name: "thomascl24/voting-difficulty",
+    description: "Comparing difficulty voting between Democrats and Republicans",
+    language: { name: "R", color: "bg-blue-400" },
+    repolink: 'https://github.com/thomascl24/voting-difficulty'
   }
 ];

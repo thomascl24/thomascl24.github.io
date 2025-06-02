@@ -15,23 +15,23 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
     <Dialog open={!!project} onOpenChange={(open) => !open && onClose()}>
       <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
         <DialogHeader>
-          <DialogTitle className="text-3xl font-bold text-slate-900 dark:text-slate-100">
+          <DialogTitle className="text-3xl font-bold text-slate-100">
             {project.title}
           </DialogTitle>
-          <DialogDescription className="text-slate-600 dark:text-slate-400">
-            {project.description}
+          <DialogDescription className='text-base'>
+            <span className="text-slate-400">{project.repodesc}</span><a href={project.repolink} target="_blank">{project.repolink}</a>
           </DialogDescription>
         </DialogHeader>
         
         <div className="space-y-6">
           <div>
             <h3 className="text-2xl font-bold mb-4">Project Overview</h3>
-            <p className="text-slate-700 leading-relaxed">{project.overview}</p>
+            <p className="text-slate-400 leading-relaxed">{project.overview}</p>
           </div>
           
           <div>
             <h3 className="text-2xl font-bold mb-4">Technical Implementation</h3>
-            <ul className="list-disc list-inside space-y-2 text-slate-700">
+            <ul className="list-disc list-inside space-y-2 text-slate-400">
               {project.implementation.map((item, index) => (
                 <li key={index}>{item}</li>
               ))}
@@ -40,7 +40,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
           
           <div>
             <h3 className="text-2xl font-bold mb-4">Key Results</h3>
-            <ul className="list-disc list-inside space-y-2 text-slate-700">
+            <ul className="list-disc list-inside space-y-2 text-slate-400">
               {project.results.map((item, index) => (
                 <li key={index}>{item}</li>
               ))}
@@ -56,6 +56,10 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                 </Badge>
               ))}
             </div>
+          </div>
+
+          <div>
+            <embed src={project.pdffile} width={project.pdfwidth} height={project.pdfheight} />
           </div>
         </div>
       </DialogContent>

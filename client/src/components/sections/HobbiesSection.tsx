@@ -43,7 +43,7 @@ const hobbies = [
 
 export default function HobbiesSection() {
   return (
-    <section id="hobbies" className="py-16 bg-slate-50 min-h-screen">
+    <section id="hobbies" className="py-16 bg-background min-h-screen">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6">Hobbies & Interests</h1>
@@ -54,7 +54,7 @@ export default function HobbiesSection() {
         
         <div className="space-y-16">
           {hobbies.map((hobby, index) => (
-            <Card key={hobby.title} className="bg-white shadow-lg">
+            <Card key={hobby.title} className="bg-background shadow-lg">
               <CardContent className="p-8">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                   <div className={hobby.reversed ? 'order-2 lg:order-1' : ''}>
