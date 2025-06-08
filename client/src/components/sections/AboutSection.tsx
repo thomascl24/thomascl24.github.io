@@ -16,12 +16,12 @@ export default function AboutSection() {
           <div className="space-y-6">
             <p className="text-base text-slate-700 dark:text-slate-300 leading-relaxed">
               Hello, and welcome to my portfolio! I'm Thomas Lee, an aspiring data scientist with expertise in machine learning,
-              statistical analysis, and data visualization. I love solving complex problems, discovering the insights
-              hidden within data, and building models to deepen our understanding of real-world phenomenons.
+              statistical analysis, and data visualization. I love solving complex problems, discovering insights
+              hidden within data, and building models to deepen our understanding of real-world phenomena.
             </p>
             <br />
             <p className="text-base text-slate-700 dark:text-slate-300 leading-relaxed">I graduated from U.C. Berkeley in 2024 with a degree in Computer Science and a minor in Data Science.
-          During my time in university, I gained a great deal of experience working as a machine learning intern
+          During my time in university, I gained a great deal of experience working with data as a machine learning intern
           in the biotechnology industry and working as a researcher in several U.C. Berkeley labs. </p>
           </div>
           <div className="text-center">
@@ -38,7 +38,7 @@ export default function AboutSection() {
           provider of clean drinking water in the East Bay, where I tackle critical questions like
           "how will a $200 million investment into smart water infrastructure manifest itself as water savings from our customers?"
           and "how can we leverage our decades of historical pipeline condition data to improve pipeline failure forcasting?"
-          I have found that the most interesting questions require both and technical skills and creativity to draw meaningful insights that motivate decision making.
+          I have found that the most interesting questions require both technical skills and creativity to draw meaningful insights that motivate decision making.
         </p>
         <br />
         <p className="text-base text-slate-700 dark:text-slate-300 leading-relaxed">
