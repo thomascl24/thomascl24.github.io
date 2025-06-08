@@ -19,7 +19,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
             {project.title}
           </DialogTitle>
           <DialogDescription className='text-base'>
-            <span className="text-slate-400">{project.repodesc}</span><a href={project.repolink} target="_blank">{project.repolink}</a>
+            <span className="text-slate-400">{project.repodesc}</span><a href={project.repolink} target="_blank" className="text-blue-500">{project.repolink}</a>
           </DialogDescription>
         </DialogHeader>
         
