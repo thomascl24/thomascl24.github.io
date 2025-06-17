@@ -20,9 +20,9 @@ export default function AboutSection() {
               hidden within data, and building models to deepen our understanding of real-world phenomena.
             </p>
             <br />
-            <p className="text-base text-slate-700 dark:text-slate-300 leading-relaxed">I graduated from U.C. Berkeley in 2024 with a degree in Computer Science and a minor in Data Science.
-          During my time in university, I gained a great deal of experience working with data as a machine learning intern
-          in the biotechnology industry and working as a researcher in several U.C. Berkeley labs. </p>
+            <p className="text-base text-slate-700 dark:text-slate-300 leading-relaxed">I graduated from U.C. Berkeley in 2024 majoring in Computer Science with a minor in Data Science.
+          While earning my degree, I gained a great deal of experience working with data as a machine learning intern
+          in the biotechnology industry and as a researcher in several U.C. Berkeley labs. </p>
           </div>
           <div className="text-center">
             <img

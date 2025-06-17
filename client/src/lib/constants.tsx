@@ -17,7 +17,7 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: "sf-crime-dashboard",
-    title: "Discovering Crime Patterns and Trends in San Francisco",
+    title: "Discovering Crime Trends and Patterns in San Francisco",
     description: "Interactive dashboards to visualize spacial and temporal trends of San Franscisco crime.",
     repolink: "https://apps.ischool.berkeley.edu/~thomascl/w209/",
     repodesc: "Link to webpage: ",
@@ -41,7 +41,7 @@ export const projects: Project[] = [
   },
   {
     id: "pokemon-tcg-power-level",
-    title: "RoBERTa and BERT Pokémon Trading Card Game Card Power and Synergy Prediction",
+    title: "RoBERTa and BERT Pokémon Card Power Level and Synergy Prediction",
     description: "Applying large language models to predict Pokémon card strength and synergy with other cards prior to observed gameplay.",
     repolink: "https://github.com/thomascl24/roberta-bert-pokemon-tcg-nlp",
     repodesc: "Link to repository: ",
@@ -70,7 +70,7 @@ export const projects: Project[] = [
   {
     id: "mushroom",
     title: "XGBoost for Poisonous Mushroom Classification",
-    description: "Classifying poisonous versus non-poisonous mushrooms using features on physical appearance.",
+    description: "Classifying poisonous versus non-poisonous mushrooms using features related to physical appearance.",
     repolink:'https://github.com/thomascl24/poisonous-mushrooms-classification',
     repodesc: "Link to repository: ",
     image: "mushrooms.jpg",
@@ -118,8 +118,8 @@ export const projects: Project[] = [
   },
   {
     id: "voting",
-    title: "A Statistical Analysis of Voting Difficulty in Democrat and Republican Voters",
-    description: "Do Democrat voters or Republican voters experience more difficulty voting?",
+    title: "A Statistical Analysis of Voting Difficulty Experienced by Democrat and Republican Voters",
+    description: "Do Democrat or Republican voters experience more difficulty voting?",
     repolink:'https://github.com/thomascl24/voting-difficulty',
     repodesc: "Link to repository: ",
     image: "dem_rep.jpg",
