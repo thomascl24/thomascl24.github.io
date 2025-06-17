@@ -16,6 +16,30 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: "sf-crime-dashboard",
+    title: "Discovering Crime Patterns and Trends in San Francisco",
+    description: "Interactive dashboards to visualize spacial and temporal trends of San Franscisco crime.",
+    repolink: "https://apps.ischool.berkeley.edu/~thomascl/w209/",
+    repodesc: "Link to webpage: ",
+    image: "GoldenGateBridge-001.jpg",
+    technologies: ["Tableau", "HTML", "CSS", "JavaScript", "TypeScript"],
+    overview: "Crime is a reality in every city, and the level of crime within a particular city can influence decisions like where individuals choose to live and how leaders decide to allocate resources. This is highly evident in a city like San Francisco, where the level of crime can range greatly from one neighborhood to the next. As the final deliverable for the Data Visualization course, our group created an interactive dashboard of crime in San Francisco. The information presented in this dashboard serves as an effective tool for stakeholders interested in community revitalization in San Francisco.",
+    implementation: [
+      "Utilized Tableau to create interactive dashboards",
+      "Time series plots to show crime trends by neighborhood and crime type",
+      "Geographic heat maps to show crime distributions across San Francisco"
+    ],
+    results: [
+      "San Francisco crime is trending downwards overall, but some crime types are on the rise, such as assault, motor vehicle theft, and drug offenses",
+      "Crime in all neighborhoods except for the Tenderloin is trending downwards",
+      "Fewer crimes occur on the weekends compared to the weekdays",
+      "The South of Market neighborhood has the highest total number of incidents"
+    ],
+    pdffile:'',
+    pdfwidth:"0px",
+    pdfheight:"0px"
+  },
+  {
     id: "pokemon-tcg-power-level",
     title: "RoBERTa and BERT Pokémon Trading Card Game Card Power and Synergy Prediction",
     description: "Applying large language models to predict Pokémon card strength and synergy with other cards prior to observed gameplay.",
@@ -42,30 +66,6 @@ export const projects: Project[] = [
     pdfwidth:"800px",
     pdfheight:"2100px"
 
-  },
-  {
-    id: "sf-crime-dashboard",
-    title: "Exploring Crime Patterns and Trends in San Francisco",
-    description: "Interactive dashboards to visualize spacial and temporal trends of San Franscisco crime.",
-    repolink: "https://apps.ischool.berkeley.edu/~thomascl/w209/",
-    repodesc: "Link to webpage: ",
-    image: "GoldenGateBridge-001.jpg",
-    technologies: ["Tableau", "HTML", "CSS", "JavaScript", "TypeScript"],
-    overview: "Crime is a reality in every city, and the level of crime within a particular city can influence decisions like where individuals choose to live and how leaders decide to allocate resources. This is highly evident in a city like San Francisco, where the level of crime can range greatly from one neighborhood to the next. As the final deliverable for the Data Visualization course, our group created an interactive dashboard of crime in San Francisco. The information presented in this dashboard serves as an effective tool for stakeholders interested in community revitalization in San Francisco.",
-    implementation: [
-      "Utilized Tableau to create interactive dashboards",
-      "Time series plots to show crime trends by neighborhood and crime type",
-      "Geographic heat maps to show crime distributions across San Francisco"
-    ],
-    results: [
-      "San Francisco crime is trending downwards overall, but some crime types are on the rise, such as assault, motor vehicle theft, and drug offenses",
-      "Crime in all neighborhoods except for the Tenderloin is trending downwards",
-      "Fewer crimes occur on the weekends compared to the weekdays",
-      "The South of Market neighborhood has the highest total number of incidents"
-    ],
-    pdffile:'',
-    pdfwidth:"0px",
-    pdfheight:"0px"
   },
   {
     id: "mushroom",
