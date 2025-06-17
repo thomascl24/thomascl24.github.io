@@ -12,7 +12,7 @@ export default function ProjectsSection({ onProjectClick }: ProjectsSectionProps
     <section id="projects" className="py-16 bg-background min-h-screen">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl text-slate-100 mb-6">My Projects</h1>
+          <h1 className="text-5xl md:text-6xl text-slate-100 mb-6">Projects</h1>
           <p className="text-xl text-slate-400 max-w-4xl mx-auto">
             Explore my academic projects where I uncover insights with data-driven exploration
           </p>
