@@ -51,7 +51,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
             <h3 className="text-2xl text-slate-200 font-bold mb-4">Technologies Used</h3>
             <div className="flex flex-wrap gap-2">
               {project.technologies.map((tech) => (
-                <Badge key={tech} variant="secondary" className="text-sm">
+                <Badge key={tech} variant="secondary" className="bg-green-900 text-slate-100 text-sm border-none">
                   {tech}
                 </Badge>
               ))}

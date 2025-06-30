@@ -4,7 +4,7 @@ const hobbies = [
   {
     title: "Playing board games",
     content: [
-      "I am really into playing board games with my friends and family! I frequently go to the Victory Point board game cafe in Berkeley with my friends. For just $8, you get access to their massive board game catalog. I love board games that force players to be strategic and optimize their play. I also recently got back into playing Magic the Gathering, which has been very fun!",
+      "I am really into playing board games with my friends and family! I frequently go to the Victory Point Cafe in Berkeley with my friends, where for just $8, you get access to their massive board game catalog. I love board games that encourage players to be strategic and optimize their play. I also recently got back into playing Magic the Gathering, which has been very fun!",
       "My favorite board games right now are Scythe, Terraforming Mars, and Hanabi."
     ],
     image: "board games2.jpg",
@@ -13,7 +13,7 @@ const hobbies = [
   {
     title: "Watching Star Trek",
     content: [
-      "As a child, I would watch episodes of Star Trek with my parents. We would dress up as characters from Star Trek every halloween. As an adult, I am still working my way through all the episodes my parents watched when they were younger.",
+      "As a child, I would watch episodes of Star Trek with my parents, and my brother and I would dress up as Star Trek characters every Halloween. As an adult, I am still working my way through all the episodes my parents watched when they were younger.",
       "I'm currently watching Star Trek: Voyager. No spoilers please!"
     ],
     image: "star trek.jpg",
@@ -23,7 +23,7 @@ const hobbies = [
   {
     title: "Cooking and baking",
     content: [
-      "I have been eating since a very young age, and I always took great joy in trying new recipes and understanding the science behind different cooking techniques. It's fascinating how small changes in ingredients or temperature can dramatically affect the outcome.",
+      "I have been eating since a very young age, and I always take great joy in trying new recipes and understanding the science behind different cooking techniques. It's fascinating how small changes in ingredients or temperature can dramatically affect the outcome.",
       "There's something satisfying about the precision required in baking that appeals to my analytical nature. I also just like bread."
     ],
     image: "flat bread.jpg",

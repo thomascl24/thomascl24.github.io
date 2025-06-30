@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 export default function ResumeSection() {
   const handleDownloadResume = () => {
     const link = document.createElement('a');
-    link.href = '/Thomas Lee Resume_portfolio.pdf';
+    link.href = '/Thomas Lee EBMUD Resume 05_28_2025 (1).pdf';
     link.download = 'Thomas_Lee_Resume.pdf';
     link.click();
   };
@@ -57,7 +57,7 @@ export default function ResumeSection() {
                     <h3 className="text-xl font-semibold text-slate-900 dark:text-slate-100">University of California, Berkeley</h3>
                     <p className="text-lg text-slate-700 dark:text-slate-300">B.A. in Computer Science, Minor in Data Science | 3.9 GPA</p>
                     <p className="text-slate-600 dark:text-slate-400">
-                      Upsilon Pi Epsilon Member: International Computing and Information honor society (top 30% of undergraduates)
+                      Upsilon Pi Epsilon Member: International Computing and Information honor society
                     </p>
                   </div>
                   <Badge variant="outline" className="text-slate-600 text-center dark:text-slate-400 text-xs ">May 2024</Badge>
@@ -76,10 +76,10 @@ export default function ResumeSection() {
                     <h3 className="text-xl font-semibold text-slate-900 dark:text-slate-100">East Bay Municipal Utility District</h3>
                     <p className="text-lg text-slate-700 dark:text-slate-300 mb-2">Data Science Intern</p>
                     <ul className="list-disc pl-6 text-slate-600 dark:text-slate-400 space-y-1">
-                      <li>Designed and deployed a fully tested Python module to streamline the processing of EBMUD’s customer billing data for the Cost of Service (COS) study.</li>
-                      <li>Performed sensitivity analyses on rate structures to assess revenue impacts during low water consumption periods, reinforcing trust in rate structure stability with lower service charges.</li>
-                      <li>Analyzed customer billing data to answer key policy questions such as typical water usage patterns and the bill impacts of proposed rate structures, informing internal decision making and outreach efforts.</li>
-                      <li>Implemented a Python-based likelihood of failure (LOF) model to quantify the rate of pipe degradation, reducing a month-long QA process to seconds and identifying critical data validity issues with RMIDs and missing leak data.</li>
+                      <li>Designed and deployed a fully-tested Python module to streamline the processing of EBMUD’s customer billing data for the water Cost of Service (COS) study.</li>
+                      <li>Performed sensitivity analyses on rate structures to assess revenue impacts during low-water consumption periods, reinforcing trust in rate structure stability with lower service charges.</li>
+                      <li>Analyzed customer billing data to answer key policy questions, such as typical water usage patterns and the bill impacts of proposed rate structures, informing internal decision making and outreach efforts.</li>
+                      <li>Implemented a Python-based likelihood of failure (LOF) model to quantify the rate of pipe degradation, reducing a month-long QA process to seconds and identifying critical data validity issues with pipe IDs and missing leak data.</li>
                       <li>Conducted water savings analysis for an advanced metering infrastructure (AMI) initiative, applying Bayesian inference to quantify savings distributions and inform long-term investment strategy.</li>
                       <li>Streamlined AMI vendor data access by implementing an Amazon Redshift-based pipeline, replacing costly $1,500 per request extractions with automated data streaming.</li>
                       <li>Managed data access and privacy workflows for company collaborations with three UC Berkeley research groups, providing mentorship with data analysis and ensuring regulatory compliance.</li>
@@ -117,7 +117,7 @@ export default function ResumeSection() {
                     <p className="text-lg text-slate-700 dark:text-slate-300 mb-2">CS 61B: Data Structures, Tutor</p>
                     <ul className="list-disc pl-6 text-slate-600 dark:text-slate-400 space-y-1">
                       <li>Composed and conducted lectures on efficient data structures, graph algorithms, and coding design principles.</li>
-                      <li>Co-authored the second edition of the course textbook, contributing to the chapters on asymptotics, tries, reductions, and decompositions.</li>
+                      <li>Co-authored the second edition of <a href="https://cs61b-2.gitbook.io/cs61b-textbook">CS61B Textbook</a>, contributing to the chapters on asymptotics, tries, reductions, and decompositions.</li>
                     </ul>
                   </div>
                   <Badge variant="outline" className="text-slate-600 dark:text-slate-400 text-sm ml-4">Jan 2023 – May 2023</Badge>
