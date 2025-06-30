@@ -15,7 +15,7 @@ export default function RepositoriesSection() {
         <div className="text-center mb-16">
           <h1 className="text-5xl md:text-6xl text-slate-100 mb-6">Repositories</h1>
           <p className="text-xl text-slate-400 max-w-3xl mx-auto">
-            A list of project repositories found in my portfolio
+            Project repositories found in my portfolio
           </p>
         </div>
         <div
