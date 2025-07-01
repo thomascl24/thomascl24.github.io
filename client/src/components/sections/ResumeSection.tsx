@@ -55,7 +55,7 @@ export default function ResumeSection() {
                 <div className="flex justify-between items-start">
                   <div>
                     <h3 className="text-xl font-semibold text-slate-900 dark:text-slate-100">University of California, Berkeley</h3>
-                    <p className="text-lg text-slate-700 dark:text-slate-300">B.A. in Computer Science, Minor in Data Science | 3.9 GPA</p>
+                    <p className="text-lg text-slate-700 dark:text-slate-300">B.A. in Computer Science, Minor in Data Science | 3.96 GPA</p>
                     <p className="text-slate-600 dark:text-slate-400">
                       Upsilon Pi Epsilon Member: International Computing and Information honor society
                     </p>
