@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 export default function ResumeSection() {
   const handleDownloadResume = () => {
     const link = document.createElement('a');
-    link.href = '/Thomas Lee EBMUD Resume 05_28_2025 (1).pdf';
+    link.href = '/Thomas Lee EBMUD Resume 06_30_2025 (1).pdf';
     link.download = 'Thomas_Lee_Resume.pdf';
     link.click();
   };
