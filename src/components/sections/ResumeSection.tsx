@@ -76,7 +76,7 @@ export default function ResumeSection() {
                     <h3 className="text-xl font-semibold text-slate-900 dark:text-slate-100">East Bay Municipal Utility District</h3>
                     <p className="text-lg text-slate-700 dark:text-slate-300 mb-2">Data Science Intern</p>
                     <ul className="list-disc pl-6 text-slate-600 dark:text-slate-400 space-y-1">
-                      <li>Designed and deployed a fully-tested Python module to streamline the processing of EBMUD’s customer billing data for the water Cost of Service (COS) study.</li>
+                      <li>Designed and deployed a Python module to streamline the processing of EBMUD’s customer billing data for the water Cost of Service (COS) study.</li>
                       <li>Performed sensitivity analyses on rate structures to assess revenue impacts during low-water consumption periods, reinforcing trust in rate structure stability with lower service charges.</li>
                       <li>Analyzed customer billing data to answer key policy questions, such as typical water usage patterns and the bill impacts of proposed rate structures, informing internal decision making and outreach efforts.</li>
                       <li>Implemented a Python-based likelihood of failure (LOF) model to quantify the rate of pipe degradation, reducing a month-long QA process to seconds and identifying critical data validity issues with pipe IDs and missing leak data.</li>
