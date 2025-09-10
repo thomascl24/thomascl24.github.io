@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 export default function ResumeSection() {
   const handleDownloadResume = () => {
     const link = document.createElement('a');
-    link.href = '/Thomas Lee EBMUD Resume 06_30_2025 (1).pdf';
+    link.href = '/Thomas Lee EBMUD Resume 09_09_2025.pdf';
     link.download = 'Thomas_Lee_Resume.pdf';
     link.click();
   };
@@ -74,7 +74,7 @@ export default function ResumeSection() {
                 <div className="flex justify-between items-start">
                   <div className="flex-1">
                     <h3 className="text-xl font-semibold text-slate-900 dark:text-slate-100">East Bay Municipal Utility District</h3>
-                    <p className="text-lg text-slate-700 dark:text-slate-300 mb-2">Data Science Intern</p>
+                    <p className="text-lg text-slate-700 dark:text-slate-300 mb-2">Data Scientist</p>
                     <ul className="list-disc pl-6 text-slate-600 dark:text-slate-400 space-y-1">
                       <li>Designed and deployed a Python module to streamline the processing of EBMUD’s customer billing data for the water Cost of Service (COS) study.</li>
                       <li>Performed sensitivity analyses on rate structures to assess revenue impacts during low-water consumption periods, reinforcing trust in rate structure stability with lower service charges.</li>
