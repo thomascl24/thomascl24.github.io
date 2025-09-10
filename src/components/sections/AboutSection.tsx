@@ -34,7 +34,7 @@ export default function AboutSection() {
         </div>
         <p className="text-base text-slate-700 dark:text-slate-300 leading-relaxed">
           Since then,
-          I have been working as a data science intern at the East Bay Municipal Utility District (<a href='https://www.ebmud.com/'>EBMUD</a>), the largest
+          I have been working at the East Bay Municipal Utility District (<a href='https://www.ebmud.com/'>EBMUD</a>), the largest
           provider of clean drinking water in the East Bay, where I tackle critical questions like
           "how will a $200 million investment into smart water infrastructure manifest itself as water savings from our customers?"
           and "how can we leverage our decades of historical pipeline condition data to improve pipeline failure forcasting?"
